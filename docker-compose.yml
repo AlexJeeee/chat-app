@@ -1,0 +1,14 @@
+version: '3'
+services:
+  node:
+    build:
+      context: back-end
+    environment:
+      PORT: 8080
+    ports:
+      - '8080:8080'
+  web:
+    build:
+      context: front-end
+    ports:
+      - "3000:3000"
